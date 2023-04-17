@@ -7,7 +7,7 @@
 
 /* CONFIGURAÇÕES GERAIS */
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     scrollbar-width: none; /* Para browsers que suportam essa propriedade */
     -ms-overflow-style: none; /* Para Internet Explorer e Edge antigos */
 }
@@ -44,6 +44,8 @@ h1{
     height: auto;
 }
 
+
+
 #menu {
     background-color: #F58634;
     text-align: center;
@@ -58,9 +60,15 @@ h1{
     margin-right: 15px;
 }
 
+ul#menu{
+    height: auto;
+    display: block;
+}
+
 #menu a{
     color: #373435;
     text-decoration: none;
+
 }
 
 #menu li:hover a{

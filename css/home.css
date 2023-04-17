@@ -5,16 +5,41 @@ h2{
 }
 
 .cHome {
-    display: block;
+    /* display: block; */
 }
 
-#beneficios li{
+div#home {
+    /* height: auto; */
+}
+
+ul#beneficios{
+    /* display: inline-block; */
+}
+
+ul#beneficios li{
+    vertical-align: top;
     display: inline-block;
-    padding: 15px;
-    margin: 15px;
-    list-style: georgian;
+    width: 200px;
+    height: auto;
+    /* border: 1px solid white; */
+    list-style: none;
+    padding: 10px;
 }
 
-#home {
-    
+p.item-beneficio{
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: underline;
+    padding: 3px;
+    color: rgb(243, 102, 8);
+    font-weight: 400;
+    font-family: 'Roboto';
 }
+
+h3.alert-home{
+    font-size: 1.3em;
+    color: rgb(243, 102, 8);
+    margin: 15px;
+}
+
+

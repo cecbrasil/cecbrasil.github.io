@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/home.css">
 
     <!-- arquivos externos -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
@@ -21,6 +21,8 @@
     <!-- ícones do google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/logmat.css">
 
 
 </head>
@@ -28,14 +30,21 @@
     <!-- MENU DO SITE -->
     <header>
         <h1>
-            <img src="img/logo_branca.png" alt="Centro de Ensino Connection Brasil" id="banner">
+            <a href="#home" alt="Connection Brasil">
+                <img src="img/logo_branca.png" alt="Centro de Ensino Connection Brasil" id="banner">
+            </a>
         </h1>
+        <i class="material-symbols-outlined" id="grade" onclick="exibirMenu()" >menu</i>
+
         <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#cidades">Cidades</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contatos">Contatos</a></li>
+            <li class="item-menu"><a href="#home">Home</a></li>
+            <li class="item-menu"><a href="#servicos">Serviços</a></li>
+            <li class="item-menu"><a href="#cidades">Cidades</a></li>
+            <li class="item-menu"><a href="#sobre">Sobre</a></li>
+            <li class="item-menu"><a href="#contatos">Contatos</a></li>
+            <li class="item-menu"><a href="#aluno">Acesso/Matrícula</a></li>
+            <!-- <li class="item-menu"><a href="http://www.ead.grupooportunidade.com.br/ead/" target="_blank">Área do Aluno</a></li> -->
+            <!-- <li class="item-menu"><a href="https://forms.gle/HANQECiyoccrLTFy8" target="_blank">Faça sua matrícula</a></li> -->
         </ul>
     </header>
 
@@ -44,18 +53,43 @@
     <div id="home" class="section">
         <!-- CONTEÚDO DA PÁGINA PRINCIPAL -->
         <div class="cHome">
+            <br><br>
             <h2>CENTRO DE ENSINO CONNECTION BRASIL</h2>
+            <p>Conectando voce ao conhecimento.</p>
             <br>
-            <p>O melhor centro de ensino profissionalizante da Região do Vale do São Francisco</p>
-            <br>
-            <br>
+           
+            <!-- <h3 class="alert-home">Veja o que nos temos para lhe oferecer:</h3> -->
+            <div id="area-externa">
+                <h3 class="alert-home">Ainda não é aluno? saiba o que está perdendo:</h3>
+            </div>
+
             <!-- LISTA DE BENEFÍCIOS -->
             <ul id="beneficios">
-                <li>Professores Capacitados</li>
-                <li>Conteúdo Atualizado</li>
-                <li>Cursos em diversas áreas</li>
-                <li>Material de Apoio</li>
-                <li>Plataforma Online</li>
+                <li>
+                    <p class="item-beneficio">Professores Capacitados</p>
+                    <p>A nossa escola conta com uma equipe/rede de professores qualificados.  É uma preocupação constante e permanente da CEC Brasil buscar profissionais que tenha habilidades cognitivas, sociais e emocionais para que visualize e implemente </p>
+
+                </li>
+                <li>
+                    <p class="item-beneficio">Conteúdo Atualizado</p>
+                    <p>O conteúdo dos nossos cursos é hiper atualizado pode ser definido como o conteúdo que foi revisado e atualizado para refletir as informações mais recentes e precisas.
+                        Isso pode ser aplicado a qualquer tipo de conteúdo, como artigos de notícias, livros didáticos, manuais de instruções e muito mais. 
+                        A atualização do conteúdo é importante para garantir que as informações sejam precisas e relevantes para o público-alvo.
+                    </p>
+                </li>
+                <li>
+                    <p class="item-beneficio">Cursos em diversas áreas</p>
+                    <p>Contamos com cursos nas áreas de Informática, Administração, Contabilidade, Arquitetura, Programação, Marketing, Comércio, Idiomas, e muito mais!</p>
+                </li>
+                <li>
+                    <p class="item-beneficio">Material de Apoio</p>
+                    <p>Temos tudo o que você precisa para se profissionalizar, apostilas impressas, digitais, livros, conteúdos elaborados por aula, playlist's de conteúdos gratuitos do youtube com ótimos professores.</p>
+                </li>
+                <li>
+                    <p class="item-beneficio">Plataforma Online</p>
+                    <p>Com o apoio do <strong>Grupo Oportunidade</strong> podemos oferecer mais de 100 cursos totalmente a distância! Além das chamadas Trilhas, que são cursos extracurriculares oferecidos para nossos alunos de forma totalmente gratúita.</p>
+                    <br>
+                </li>
                 
             </ul>
         </div>
@@ -64,6 +98,13 @@
     
     <div id="servicos" class="section">
         <p>Aqui, você poderá ver os nossos serviços</p>
+    </div>
+
+    <div id="aluno" class="section">
+        <!-- ÁREA DO ALUNO -->     
+        <a id="btn-login" href="http://www.ead.grupooportunidade.com.br/ead/" target="_blank" rel="noopener noreferrer">Acessar área do aluno</a>
+            
+        <a id="btn-matricula" href="https://forms.gle/HANQECiyoccrLTFy8" target="_blank" rel="noopener noreferrer">Fazer matrícula</a>        
     </div>
 
     <div id="cidades" class="section">
@@ -85,10 +126,25 @@
     <!-- RODAPÉ DO SITE -->
     <footer>
         <p>
-            Criado por Jorge Luiz de Alencar
+            Criado com amor e ódio por &copy JLA2023
         </p>
     </footer>
 
-    
+   
+    <script>
+        
+        var item = document.getElementsByClassName("item-menu");
+
+        function exibirMenu(){
+            if(menu.style.display == 'none'){
+                menu.style.setProperty('display', 'block', 'important');
+                item.style.setProperty('display', 'block', 'important');
+            } else{
+                menu.style.display = 'none'
+            }
+        }
+
+    </script>
+    <script  src="https://code.jquery.com/jquery-3.6.4.js"  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="  crossorigin="anonymous"></script>
 </body>
 </html>

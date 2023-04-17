@@ -1,0 +1,141 @@
+i#grade {
+    display: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#grade:hover{
+    background-color: rgb(243, 102, 8);
+}
+
+/* VISUALIZAÇÃO MOBILE */
+@media (max-width: 767px){
+    body{
+        overflow: scroll;
+        
+    }
+
+    i#grade{
+        display: block;
+    }
+
+    ul#menu{
+        display: none;
+    }
+
+    img#banner{
+        width: 200px;
+        height: auto;
+    }
+
+    a#menu {
+        font-size: 2rem;
+    }
+
+    ul#menu li{
+        display: block;
+        cursor: pointer;
+    }
+    
+    ul#menu li:hover{
+        background-color: rgb(226, 64, 43);
+    }
+    
+    /* HOME DA PÁGINA */
+    div#home{
+        margin-top: 120px;
+        padding-bottom: 20px;
+        height: auto;
+        /* align-items: center; */
+        width: 100vw;
+    }
+    
+    /* ITEM DA SESSÃO HOME */
+    ul#beneficios li{
+        text-align: center;
+        display: block;
+        width: 95vw;
+        border: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10px;
+        
+    }
+
+    ul#beneficios{
+        text-align: center;
+        width: 100vw;
+        /* width: 100vw; */
+
+    }
+    
+
+
+}
+
+/* CONFIGURAÇÃO PADRÃO */
+@media (max-width: 1200px){
+    
+/* CABEÇALHO DO SITE */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 9999;
+}
+
+
+h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 60%;
+}
+
+#banner {
+    width: 300px;
+    height: auto;
+}
+
+
+
+#menu {
+    background-color: #F58634;
+    text-align: center;
+    height: 40%;
+}
+
+#menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+ul#menu{
+    height: auto;
+    display: inline-block;
+}
+
+#menu a{
+    color: #373435;
+    text-decoration: none;
+
+}
+
+#menu li:hover a{
+    color: aliceblue;
+    text-shadow: 5px solid #373435;
+}
+
+
+}
